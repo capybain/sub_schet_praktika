@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/view_text"
+        android:layout_width="298dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        style="@style/result_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="52dp"
+        android:text="тык"
+        style="@style/btn"
+        app:layout_constraintBottom_toTopOf="@+id/view_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="257dp"
+        android:layout_height="60dp"
+        android:hint="@string/help"
+        android:inputType="text"
+        android:shadowColor="#FF0000"
+        style="@style/EditTextStyle"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
